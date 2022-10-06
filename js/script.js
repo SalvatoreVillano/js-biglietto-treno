@@ -1,9 +1,27 @@
+var conditionEta = true;
+var conditionKm = true;
 const prezzoKm = 0.21
 
-const eta = parseInt(prompt('In che anno sei nato? '))
+while(conditionEta){
+        var eta = parseInt(prompt('Quanti anni hai? '))
+        if(Number.isInteger(eta) == false){
+        window.alert("Sono ammessi solo numeri!");
+        }
+        else {
+            conditionEta = false;
+        }
+    }
 
-const km = parseInt(prompt('Inserisci i km che intendi percorrere: '))
-
+    while(conditionKm){
+        var km = parseInt(prompt('Inserisci i km che intendi percorrere: '))
+        if(Number.isInteger(km) == false){
+        window.alert("Sono ammessi solo numeri!");
+        }
+        else {
+            conditionKm = false;
+        }
+    }
+    
 let totale;
 
 if (eta < 18){
